@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.07)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 44px; fill: #ffffff; }
+    .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #cbd5e1; }
+    .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #a5b4fc; }
+
+    /* Keyframe Animations */
+    @keyframes barWave {
+      0%, 100% { height: 15px; y: 292.5px; opacity: 0.4; }
+      50% { height: 65px; y: 267.5px; opacity: 1; }
+    }
+    @keyframes pulseParticle {
+      0%, 100% { transform: scale(1); opacity: 0.3; }
+      50% { transform: scale(1.5); opacity: 0.8; }
+    }
+    @keyframes dashMove {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    .wave-bar { animation: barWave 1.8s ease-in-out infinite; }
+    .b1 { animation-delay: 0.0s; }
+    .b2 { animation-delay: 0.2s; }
+    .b3 { animation-delay: 0.4s; }
+    .b4 { animation-delay: 0.6s; }
+    .b5 { animation-delay: 0.8s; }
+    .b6 { animation-delay: 1.0s; }
+    .b7 { animation-delay: 1.2s; }
+    .b8 { animation-delay: 1.4s; }
+
+    .particle { animation: pulseParticle 3s infinite ease-in-out; transform-box: fill-box; transform-origin: center; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="400" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Background Animated Particles/Grid (Behind text) -->
+  <g opacity="0.25">
+    <circle cx="150" cy="80" r="4" fill="#818cf8" class="particle" style="animation-delay: 0s;"/>
+    <circle cx="1050" cy="120" r="6" fill="#c084fc" class="particle" style="animation-delay: 1s;"/>
+    <circle cx="980" cy="320" r="5" fill="#f472b6" class="particle" style="animation-delay: 0.5s;"/>
+    <circle cx="100" cy="310" r="4" fill="#38bdf8" class="particle" style="animation-delay: 1.5s;"/>
+  </g>
+
+  <!-- Dynamic Animated Soundwave Graphic (Positioned cleanly at bottom right, transparent background layer) -->
+  <g transform="translate(780, 50)" opacity="0.85">
+    <!-- Waveform Visualizer -->
+    <rect class="wave-bar b1" x="0" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b2" x="16" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b3" x="32" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b4" x="48" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b5" x="64" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b6" x="80" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b7" x="96" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b8" x="112" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b3" x="128" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b2" x="144" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b5" x="160" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+    <rect class="wave-bar b1" x="176" y="292.5" width="8" height="15" rx="4" fill="url(#accent-grad)" />
+  </g>
+
+  <!-- Foreground Main Content Overlay Card (Guarantees zero overlap with background elements) -->
+  <g transform="translate(60, 50)">
+    <!-- Pill Badge -->
+    <rect x="0" y="20" width="340" height="36" rx="18" fill="url(#card-grad)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+    <text x="18" y="43" class="badge-text">🎙️ SPEECH RECOGNITION &amp; STT ECOSYSTEM</text>
+
+    <!-- Main Title (Unmatched prominence) -->
+    <text x="0" y="120" class="title">Awesome Automatic Speech Recognition</text>
+    <text x="0" y="170" class="title" fill="url(#accent-grad)">ASR / Speech-to-Text (STT) 🚀</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="225" class="subtitle">Curated Commercial APIs, Open-Source Models &amp; Real-Time Frameworks</text>
+    <text x="0" y="255" class="subtitle" font-size="16px" fill="#94a3b8">Featuring Whisper, Sherpa-ONNX, Deepgram, AssemblyAI, Vosk &amp; Cohere Transcribe</text>
+
+    <!-- Features Pills -->
+    <g transform="translate(0, 285)">
+      <rect x="0" y="0" width="130" height="28" rx="14" fill="rgba(129, 140, 248, 0.15)" stroke="#818cf8" stroke-width="1"/>
+      <text x="65" y="18" font-family="sans-serif" font-size="12px" font-weight="600" fill="#a5b4fc" text-anchor="middle">⚡ Real-Time STT</text>
+
+      <rect x="142" y="0" width="160" height="28" rx="14" fill="rgba(192, 132, 252, 0.15)" stroke="#c084fc" stroke-width="1"/>
+      <text x="222" y="18" font-family="sans-serif" font-size="12px" font-weight="600" fill="#e9d5ff" text-anchor="middle">🗣️ Speaker Diarization</text>
+
+      <rect x="314" y="0" width="140" height="28" rx="14" fill="rgba(244, 114, 182, 0.15)" stroke="#f472b6" stroke-width="1"/>
+      <text x="384" y="18" font-family="sans-serif" font-size="12px" font-weight="600" fill="#fbcfe8" text-anchor="middle">🔒 Edge &amp; On-Device</text>
+    </g>
+  </g>
+</svg>
