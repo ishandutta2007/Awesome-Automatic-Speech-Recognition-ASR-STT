@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT?style=social" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT?style=social" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Automatic-Speech-Recognition-ASR-STT?color=blue" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -66,7 +66,7 @@ Below is the comparison of top commercial speech recognition API providers, sort
 
 ## 🔓 Open-Source GitHub Projects 🌾
 
-*Sorted by GitHub Stars Count (Descending)* 🌟
+*Sorted by GitHub_Stars_Count (Descending)* 🌟
 
 - **[OpenAI Whisper](https://github.com/openai/whisper)** [![Stars](https://img.shields.io/github/stars/openai/whisper?style=social&color=white)](https://github.com/openai/whisper/stargazers)  
   **The foundational open-source ASR model**, MIT licensed. Transformer sequence-to-sequence model trained on 680,000 hours of multilingual data. Six model sizes: tiny (39M), base (74M), small (244M), medium (769M), large (1550M), and turbo (809M). Supports 99 languages, speech translation, and language identification. Runs on CPU and GPU. 🌍
@@ -142,7 +142,7 @@ Contributions are very welcome! Follow these simple steps to submit new ASR plat
 
 1. 🍴 **Fork** the repository.
 2. 📝 **Add/edit** entries in `README.md` maintaining table/list structure and formatting.
-3. 🔗 Include project title, official website/GitHub link, exact Stars Count, license, and brief description.
+3. 🔗 Include project title, official website/GitHub link, exact Stars_Count, license, and brief description.
 4. 🚀 Submit a **Pull Request** with a descriptive summary of your changes.
 
 ---
